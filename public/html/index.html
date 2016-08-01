@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='ngEarth'>
+<head>
+  <meta charset="UTF-8">
+  <title>ngEarthGl</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.js"></script>
+  <script src="http://www.webglearth.com/v2/api.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div ng-controller='EarthController'>
+    <div id="earth_div" style="width:600px;height:400px;border:1px solid gray; padding:2px;"></div>
+    <h4>Latitude: {{latitude | number:0}}</h4>
+    <h4>Longitude: {{longitude | number:0}}</h4>
+<!--<div class="col-md-2 col-md-offset-3"><!-->
+      <button class="btn btn-primary btn-block" ng-click='alert("testy test")'>HOURLY WEATHER</a>
+    </div>
+  </div>
+  <script src="js/app.js"></script>
+  <script src="js/controllers/EarthController.js"></script>
+  <script src = "js/services/WeatherService.js"></script>
+</body>
+</html>
