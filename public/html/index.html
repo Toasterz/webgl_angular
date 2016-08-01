@@ -11,8 +11,8 @@
 <body>
   <div ng-controller='EarthController'>
     <div id="earth_div" style="width:600px;height:400px;border:1px solid gray; padding:2px;"></div>
-    <h4>Latitude: {{latitude | number:0}}</h4>
-    <h4>Longitude: {{longitude | number:0}}</h4>
+    <h4>Latitude: {{latitude}}</h4>
+    <h4>Longitude: {{longitude}}</h4>
 <!--<div class="col-md-2 col-md-offset-3"><!-->
       <button class="btn btn-primary btn-block" ng-click='alert("testy test")'>HOURLY WEATHER</a>
     </div>
@@ -20,5 +20,6 @@
   <script src="js/app.js"></script>
   <script src="js/controllers/EarthController.js"></script>
   <script src = "js/services/WeatherService.js"></script>
+  <img src = "http://67.media.tumblr.com/tumblr_mac0i9xIMf1rzupqxo1_500.png">
 </body>
 </html>
